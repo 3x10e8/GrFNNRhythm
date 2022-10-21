@@ -45,7 +45,8 @@ complexity = {'Complexity level 0, Pattern 1';...
     'Complexity level 2, Pattern 1';'Complexity level 2, Pattern 2';...
     'Complexity level 3, Pattern 1';'Complexity level 3, Pattern 2';...
     'Complexity level 4, Pattern 1';'Complexity level 4, Pattern 2';...
-    'Complexity level 4, Pattern 3';'Complexity level 4, Pattern 4'};
+    'Complexity level 4, Pattern 3';'Complexity level 4, Pattern 4';...
+    'Live Recording'};
 set(handles.dropdownmenu1, 'String', complexity);
 set(handles.dropdownmenu2,'BackgroundColor','white');
 rhythmModel = {'One Layer';'One Layer, local connection';'One Layer, harmonic connection';...
@@ -114,7 +115,9 @@ switch stimulusChoice
     case 10
         stimulus = 'comp4p3.mid';
     case 11
-        stimulus = 'comp4p5.mid';     
+        stimulus = 'comp4p5.mid';
+    case 12
+        stimulus = 'live.mid';
 end
 
 switch rhythmChoice
